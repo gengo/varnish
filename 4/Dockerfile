@@ -18,6 +18,7 @@ EXPOSE 6081 6082
 VOLUME /var/lib/varnish
 
 COPY templates /etc/gotpl/
+COPY templates/default_custom.vcl /etc/varnish/custom.vcl
 COPY actions /usr/local/bin/
 COPY docker-entrypoint.sh /
 
